@@ -91,6 +91,11 @@ header {
   z-index: 1000;
 }
 
+.header-full-bleed {
+  box-shadow: 0 0 0 100vmax #ff00f6;
+  clip-path: inset(0 -100vmax);
+}
+
 header .logo {
   display: flex;
   align-items: center;
