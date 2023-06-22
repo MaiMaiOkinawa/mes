@@ -76,9 +76,9 @@
     "image": "https://images.unsplash.com/photo-1522448023466-b1c85da46df0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
     "level": "Level 10",
     "category": [
-      { "Months and Week": "https://maimaiokinawa.github.io/months_week_mes/" },
-      { "Seasons": "#" },
-      { "Events": "#" }
+      { "Months & Week": "https://maimaiokinawa.github.io/months_week_mes/" },
+      { "Season": "https://maimaiokinawa.github.io/season_mes/" },
+      { "Events": "https://maimaiokinawa.github.io/daily_event_mes/" }
     ]
   },
   {
