@@ -148,7 +148,8 @@ header .logo::after {
   align-items: center;
   flex-wrap: wrap;
   gap: 5rem 3rem;
-  padding: 100px 50px;
+  margin-top: 3rem;
+  padding-block: 6.25rem;
 }
 
 .container .card {
@@ -213,7 +214,7 @@ header .logo::after {
 .container .card .content h2 {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #333;
+  color: var(--yellow);
 }
 
 .container .card .content a {
@@ -251,7 +252,7 @@ header .logo::after {
   }
 }
 
-@media (max-width: 852px) {
+@media (max-width: 768px) {
   header {
     height: 4rem;
     justify-content: space-between;
@@ -342,10 +343,6 @@ header .logo::after {
 }
 
 @media (max-width: 480px) {
-  .container .card {
-    width: 17.5rem;
-  }
-
   .container .card .img-box {
     width: 15rem;
   }
