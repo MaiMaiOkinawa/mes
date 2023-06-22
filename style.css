@@ -77,7 +77,7 @@ select {
 section {
   margin: 0 auto;
   max-width: 1200px;
-  padding: 1rem;
+  padding-block: 1rem;
 }
 
 header {
