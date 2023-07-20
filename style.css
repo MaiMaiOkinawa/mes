@@ -236,6 +236,34 @@ header .logo::after {
   opacity: 0.8;
 }
 
+.hero {
+  width: 100vw;
+  height: 100vh;
+}
+
+.hero-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+}
+
+.hero-container h1 {
+  font-size: 3rem;
+  padding-top: 12rem;
+}
+
+.ball-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+}
+.balls {
+  width: 6.25rem;
+}
+
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
