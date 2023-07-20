@@ -47,7 +47,8 @@ body {
   line-height: 1.5;
   font-family: "Jost", Kokoro, sans-serif;
   background-color: var(--green);
-  color: var(--black);
+  color: #333;
+  overflow: hidden;
 }
 
 /* A elements that don't have a class get default styles */
@@ -75,13 +76,13 @@ select {
 }
 
 section {
-  margin: 0 auto;
+  margin-inline: auto;
   max-width: 1200px;
   padding-block: 1rem;
 }
 
 header {
-  background-color: var(--pink);
+  background-color: ;
   width: 100%;
   position: fixed;
   display: flex;
@@ -132,108 +133,13 @@ header .logo::after {
 }
 
 .nav_link:hover {
-  background-color: rgb(109, 109, 67);
+  background-color: var(--pink);
   transition: 0.4s ease;
 }
 
 #header__toggle,
 #header__close {
   display: none;
-}
-
-.container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 5rem 3rem;
-  margin-top: 3rem;
-  padding-block: 6.25rem;
-}
-
-.container .card {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  width: 21rem;
-  max-width: 100%;
-  height: 18.75rem;
-  background: var(--purple);
-  border-radius: 0.5rem;
-  transition: 0.5s;
-  box-shadow: 10px 15px;
-}
-
-.container .card:hover {
-  height: 18.75rem;
-}
-
-.container .card .img-box {
-  position: absolute;
-  top: 1.25rem;
-  width: 18.75rem;
-  height: 13.75rem;
-  border-radius: 0.5rem;
-  overflow: hidden;
-  transition: 0.5s;
-}
-
-.container .card:hover .img-box {
-  top: -5rem;
-  scale: 0.75;
-  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.5);
-}
-
-.container .card .img-box img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.container .card .content {
-  position: absolute;
-  top: 15.75rem;
-  width: 100%;
-  height: 2.1rem;
-  padding: 0 1.8rem;
-  text-align: center;
-  overflow: hidden;
-  transition: 0.5s;
-}
-
-.container .card:hover .content {
-  top: 8rem;
-  height: 15rem;
-}
-
-.container .card .content h2 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #fff;
-}
-
-.container .card .content a {
-  position: relative;
-  top: 1rem;
-  display: inline-block;
-  border-radius: 0.5rem;
-  margin: 0.5rem 0.8rem;
-  padding: 0.4rem 0.8rem;
-  text-decoration: none;
-  background: var(--yellow);
-  color: var(--black);
-  font-weight: 700;
-  box-shadow: 5px 7px #000000;
-}
-
-.container .card .content a:hover {
-  transform: scale(1.1);
-  opacity: 0.8;
 }
 
 .hero {
@@ -250,18 +156,51 @@ header .logo::after {
   margin-inline: auto;
 }
 
+.hero-container::before {
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 50%;
+  background-image: url(/img/shunto-ball.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  top: -10%;
+  bottom: 20%;
+  z-index: -1;
+}
+
 .hero-container h1 {
   font-size: 3rem;
   padding-top: 12rem;
 }
 
-.ball-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 0;
+h1::before {
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 50%;
+  background-image: url(/img/sochan-ball.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  top: 20%;
+  left: -10%;
+  z-index: -1;
 }
-.balls {
-  width: 6.25rem;
+
+h1::after {
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 50%;
+  background-image: url(/img/rio-ball.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  top: -10%;
+  right: -15%;
+  z-index: -1;
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
