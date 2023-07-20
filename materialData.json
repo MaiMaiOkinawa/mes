@@ -85,8 +85,8 @@
     "image": "https://images.unsplash.com/photo-1672686694003-7a888090e820?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
     "level": "Level 11",
     "category": [
-      { "Stationery": "#" },
-      { "School": "#" },
+      { "Stationery": "https://maimaiokinawa.github.io/stationery_mes/" },
+      { "School": "https://maimaiokinawa.github.io/school_mes/" },
       { "Sports": "#" },
       { "Instrument": "#" }
     ]
