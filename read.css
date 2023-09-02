@@ -144,12 +144,12 @@ header .logo::after {
 .btn {
   padding: 0.5rem 1.2rem;
   color: var(--black);
-  font-size: 2.5rem;
+  font-size: 1rem;
   font-weight: bold;
   border-radius: 1rem;
   background-color: var(--purple);
   box-shadow: 5px 5px;
-  margin-inline: 5rem;
+  margin-inline: 1.5rem;
 }
 
 .btn:hover {
@@ -257,6 +257,10 @@ h1 {
   }
   .show {
     right: 0;
+  }
+
+  .btn {
+   display: block;
   }
 
   .pdf-container {
