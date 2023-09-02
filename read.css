@@ -261,6 +261,7 @@ h1 {
 
   .btn {
    display: block;
+   margin-block: 1.5rem;
   }
 
   .pdf-container {
